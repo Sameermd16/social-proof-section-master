@@ -121,8 +121,6 @@ h1{
     gap: 1rem;
     color: var(--Very-Dark-Magenta);
     border-radius: 10px;
-    /* display: inline-block; */
-    /* width: 70%; */
 }
 .star-2{
     margin-right: 2rem;
@@ -135,6 +133,7 @@ h1{
 }
 .rating-para{
     font-weight: 700;
+    /* border: 1px solid red; */
 }
 .name{
     font-weight: 500;
@@ -148,9 +147,7 @@ h1{
     .top-box{
         flex-direction: column;
         width: 100%;
-        /* position: relative; */
         top: 100px;
-        /* border: 1px solid black; */
         height: 100%;
         text-align: center;
     }
@@ -165,14 +162,15 @@ h1{
     .rating{
         width: 100%;
     }
-    .star-2{
-        margin-right: 0;
-    }
-    .star-1{
+    .star-2, .star-1{
         margin-right: 0;
     }
     .star-rating{
-        justify-content: center;
+        /* border: 1px solid blue; */
+        flex-direction: column;
+        gap: 0rem;
+        justify-content: space-evenly;
+        height: 70px;
     }
     .rating{
         gap: 1rem;
@@ -180,5 +178,8 @@ h1{
     h1{
         line-height: 2rem;
     }
-
+    .stars{
+        /* border: 1px solid red; */
+        padding: 0;
+    }
 }
